@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="157dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="334dp"
+        android:layout_height="43dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/topbar" />
+
+    <TextView
+        android:id="@+id/namemap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikregular"
+        android:text="NAME MAP"
+        android:textColor="#7A8A98"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/mapimg"
+        android:layout_width="366dp"
+        android:layout_height="457dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/anubismap" />
+
+    <TextView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/rubiksemibold"
+        android:text="BACK"
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:fontFamily="@font/rubiksemibold"
+        android:text="T"
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backbtn"
+        app:layout_constraintEnd_toStartOf="@+id/backbtn"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="@+id/namemap"
+        app:layout_constraintTop_toTopOf="@+id/backbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/namebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/rubiksemibold"
+        android:text="NAME"
+        android:textColor="@color/text_color"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/side"
+        app:layout_constraintEnd_toStartOf="@+id/side"
+        app:layout_constraintTop_toTopOf="@+id/side"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/barbottom"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mapimg"
+        app:layout_constraintStart_toStartOf="@+id/mapimg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:id="@+id/mapsbuttons"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/map_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/map_text"
+                android:layout_width="86dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Maps Page"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settingsbuttons"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/settings_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_settings" />
+
+            <TextView
+                android:id="@+id/settings_text"
+                android:layout_width="86dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="Settings Page"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/anubis_t"
+        android:layout_width="347dp"
+        android:layout_height="436dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mapimg"
+        app:layout_constraintEnd_toEndOf="@+id/mapimg"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/mapimg"
+        app:layout_constraintTop_toTopOf="@+id/mapimg"
+        app:layout_constraintVertical_bias="0.362">
+
+        <ImageView
+            android:id="@+id/smoke_anubis_t_4"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="-55dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_t_1"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="-115dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_t_2"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-87dp"
+            android:layout_marginTop="-25dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_t_3"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-60dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_t_5"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-64dp"
+            android:layout_marginTop="-24dp"
+            app:srcCompat="@drawable/smoke" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/anubis_ct"
+        android:layout_width="347dp"
+        android:layout_height="436dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/mapimg"
+        app:layout_constraintEnd_toEndOf="@+id/mapimg"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/mapimg"
+        app:layout_constraintTop_toTopOf="@+id/mapimg"
+        app:layout_constraintVertical_bias="0.362">
+
+        <ImageView
+            android:id="@+id/smoke_anubis_ct_4"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="-55dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_ct_1"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="-55dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_ct_2"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-110dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_ct_3"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/smoke" />
+
+        <ImageView
+            android:id="@+id/smoke_anubis_ct_5"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-30dp"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/smoke" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
