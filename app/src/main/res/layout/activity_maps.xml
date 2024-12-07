@@ -159,6 +159,7 @@
         android:layout_width="359dp"
         android:layout_height="600dp"
         android:visibility="gone"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
