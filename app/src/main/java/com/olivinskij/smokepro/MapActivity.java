@@ -215,5 +215,4 @@ public class MapActivity extends AppCompatActivity {
             mapimg.setImageResource(R.drawable.trainmap);
         }
         }
-    }
 }
