@@ -189,31 +189,31 @@ public class MapActivity extends AppCompatActivity {
             anubis_t.setVisibility(View.VISIBLE);
         } else if ("infernomap".equals(showImage)) {
             mapimg.setImageResource(R.drawable.infernomap);
-//        }else if ("dust2map".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.dust2map);
-//        }else if ("vertigomap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.vertigomap);
-//        }else if ("nukemap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.nukemap);
-//        }
-//        else if ("miragemap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.miragemap);
-//        }
-//        else if ("ancientmap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.ancientmap);
-//        }
-//        else if ("overpassmap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.overpassmap);
-//        }
-//        else if ("italymap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.italymap);
-//        }
-//        else if ("officemap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.officemap);
-//        }
-//        else if ("trainmap".equals(showImage)) {
-//            mapimg.setImageResource(R.drawable.trainmap);
-//        }
+        }else if ("dust2map".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.dust2map);
+        }else if ("vertigomap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.vertigomap);
+        }else if ("nukemap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.nukemap);
+        }
+        else if ("miragemap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.miragemap);
+        }
+        else if ("ancientmap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.ancientmap);
+        }
+        else if ("overpassmap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.overpassmap);
+        }
+        else if ("italymap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.italymap);
+        }
+        else if ("officemap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.officemap);
+        }
+        else if ("trainmap".equals(showImage)) {
+            mapimg.setImageResource(R.drawable.trainmap);
+        }
         }
     }
 }
